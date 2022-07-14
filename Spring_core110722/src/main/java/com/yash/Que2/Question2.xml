@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id = "checkaverage" class = "com.yash.Que2.Average">
+      <property name = "no1" value = "30"/>
+      <property name = "no2" value = "30"/>
+      <property name = "no3" value = "30"/>
+      <property name = "no4" value = "30"/>
+   </bean>
+   
+
+</beans>

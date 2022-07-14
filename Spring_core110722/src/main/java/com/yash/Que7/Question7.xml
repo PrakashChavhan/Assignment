@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id = "Merge1" class = "com.yash.Que7.Class1">
+         <property name="a">
+        <array value-type="int">
+            <value>10</value>
+            <value>20</value>
+            <value>60</value>
+            <value>5</value>
+        </array>
+</property>
+      
+   </bean>
+    <bean id = "Merge2" class = "com.yash.Que7.Class2">
+         <property name="b">
+        <array value-type="int">
+            <value>10</value>
+            <value>20</value>
+            <value>60</value>
+            <value>50</value>
+            <value>400</value>
+        </array>
+</property>
+      
+   </bean>
+   
+
+</beans>
