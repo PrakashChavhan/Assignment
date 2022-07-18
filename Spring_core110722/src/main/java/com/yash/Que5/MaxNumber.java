@@ -1,33 +1,29 @@
 package com.yash.Que5;
 
 import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
 
 public class MaxNumber {
-int a[];
+List<Integer> a;
 
 
-@Override
-public String toString() {
-	return "MaxNumber [a=" + Arrays.toString(a) + "]";
-}
 
-public int[] getA() {
+public List<Integer> getA() {
 	return a;
 }
 
-public void setA(int[] a) {
+
+
+public void setA(List<Integer> a) {
 	this.a = a;
 }
+
+
+
 public void findMax() {
-	int max=a[0];
-	for(int i=0;i<a.length;i++) {
-		if(a[i]>max) {
-			max=a[i];
-		}
-		
-		
-	}
-	
-	System.out.println("The Maximum from Array:"+max);
+
+	int m=a.stream().max(Comparator.comparing(Integer::valueOf)).get();
+	System.out.println("The Maximum number is:"+m);
 }
 }

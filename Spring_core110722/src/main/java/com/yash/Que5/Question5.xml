@@ -7,12 +7,13 @@
 
    <bean id = "checkMax" class = "com.yash.Que5.MaxNumber">
          <property name="a">
-        <array value-type="int">
+       <list value-type="int">
             <value>10</value>
             <value>20</value>
             <value>60</value>
             <value>5</value>
-        </array>
+        </list>
+        
 </property>
       
    </bean>

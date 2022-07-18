@@ -1,4 +1,4 @@
-package com.yash;
+package com.yash.Que1;
 
 import javax.annotation.PostConstruct;
 

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+						http://www.springframework.org/schema/context
+						http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	
+
+	<bean id="stu1" class="com.yash.Que11.Result">
+		<constructor-arg value="56"></constructor-arg>
+		<constructor-arg value="67"></constructor-arg>
+		<constructor-arg value="85"></constructor-arg>
+		<constructor-arg value="90"></constructor-arg>
+		<constructor-arg value="90"></constructor-arg>
+	</bean>
+
+	<bean id="stum1" class="com.yash.Que11.Student">
+		<constructor-arg value="Prakash"></constructor-arg>
+		<constructor-arg value="12"></constructor-arg>
+		<constructor-arg value="29-05-1996"></constructor-arg>
+		<constructor-arg value="Msc"></constructor-arg>
+		<constructor-arg value="A"></constructor-arg>
+		<constructor-arg>
+			<ref bean="stu1" />
+		</constructor-arg>
+	</bean>
+	
+	
+	<bean id="stu2" class="com.yash.Que11.Result">
+		<constructor-arg value="56"></constructor-arg>
+		<constructor-arg value="99"></constructor-arg>
+		<constructor-arg value="89"></constructor-arg>
+		<constructor-arg value="90"></constructor-arg>
+		<constructor-arg value="90"></constructor-arg>
+	</bean>
+
+	<bean id="stum2" class="com.yash.Que11.Student">
+		<constructor-arg value="Aakash"></constructor-arg>
+		<constructor-arg value="11"></constructor-arg>
+		<constructor-arg value="10-09-98"></constructor-arg>
+		<constructor-arg value="Bsc"></constructor-arg>
+		<constructor-arg value="A"></constructor-arg>
+		<constructor-arg>
+			<ref bean="stu1" />
+		</constructor-arg>
+	</bean>
+
+
+</beans>

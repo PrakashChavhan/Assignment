@@ -1,4 +1,4 @@
-package com.yash;
+package com.yash.Que1;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
